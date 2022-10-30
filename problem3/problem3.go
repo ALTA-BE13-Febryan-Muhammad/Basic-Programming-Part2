@@ -6,6 +6,10 @@ import (
 
 func PrimeNumber(number int) bool {
 	// your code here
+	var prime bool
+	i := 1; i <= number; i++{
+		number%i = 
+	}
 }
 
 func main() {
