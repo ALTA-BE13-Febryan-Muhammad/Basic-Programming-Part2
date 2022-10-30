@@ -1,26 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func FaktorBilanganDesc(n int) string {
+func FaktorBilangan(n int) string {
 	// your code here
-	var number string
-	for i := 1; i <= n; i++ {
+	var faktor string
+	for i := n; i >= 1; i-- {
 		if n%i == 0 {
-			number = "faktorisasi"
+			faktor += fmt.Sprintln(i)
 		}
 	}
-	return number
+	return faktor
 
-}
 }
 
 func main() {
-	var number int = 6
+	var number int
 	fmt.Scanf("%d", &number)
-	fmt.Println(FaktorBilanganDesc(number))
+	fmt.Println(FaktorBilangan(number))
 
-	var number2 int = 20
-	fmt.Scanf("%d", &number2)
-	fmt.Println(FaktorBilanganDesc(number2))
+	// var number2 int = 20
+	// fmt.Scanf("%d", &number2)
+	// fmt.Println(FaktorBilangan(number2))
 }

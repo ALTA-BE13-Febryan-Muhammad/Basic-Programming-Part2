@@ -4,6 +4,16 @@ import "fmt"
 
 func Palindrome(input string) bool {
 	// your code here
+	reversedStr := ""
+	for i := len(input) - 1; i >= 0; i-- {
+		reversedStr += string(input[i])
+	}
+	for i := range input {
+		if input[i] != reversedStr[i] {
+			return false
+		}
+	}
+	return true
 }
 
 func main() {
