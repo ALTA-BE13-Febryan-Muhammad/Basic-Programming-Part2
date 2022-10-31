@@ -7,8 +7,8 @@ import (
 func PrimeNumber(number int) bool {
 	// your code here
 	var faktor int
-	for i := 1; i <= number; i++{
-		if number%i = 0 {
+	for i := 1; i <= number; i++ {
+		if number%i == 0 {
 			faktor++
 		}
 	}
